@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>location de voiture</title>
+  
+  <style>
+    header{
+      background-color: black;
+      color: #fff;
+      width: 100%;
+      position: fixed;
+      text-align: center;
+      
+    }
+
+    .element {
+      
+      position: relative; 
+      animation: move 10s ease-in-out infinite;
+      top: 50%;
+      left: 50%;
+      color:orangered; 
+      font-size: 20px; 
+      font-weight: bold; 
+      text-align: center; 
+  }
+  @keyframes move {
+    0%   { left: 0; }
+    50%  { left: 50%; }
+    100% { left: 100%; }
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: whitesmoke;
+      
+    
+    }
+    .voiture{
+      border: 1px solid orangered;
+      padding: 5px;
+      background-color: #fff;
+      text-align: center;
+      
+    }
+    .voiture img {
+      height: 300px;
+      max-width: 100%;
+      max-height: 100%;
+      width: 400px
+      
+    }
+
+    .voiture:hover {
+        background: rgb(228, 215, 215);
+        transform-style: preserve-3d;
+        transform: scale(1.10);
+        transition: all ease 0.3s;
+        
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    
+    .btn-orange {
+      background-color: orangered;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+  </style>
+</head>
+<body >
+
+  <header>
+    <h3> <b>  BIENVENUE DANS NOTRE DEUXIEME PAGE GALERIE DE VOITURES ! </b> </h3>
+  </header>  <br> <br>
+  <div class="element"> 
+    <p>
+    Découvrez notre sélection de véhicules de location de haute qualité, parfaitement adaptés à tous vos besoins en matière de déplacement.
+     Que vous recherchiez une berline élégante, une citadine, un SUV spacieux..., nous avons la voiture idéale pour vous. 
+     Explorez notre galerie et trouvez la voiture qui correspond à vos préférences et à votre budget.
+    </p>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+  
+      <div class="col-md-4">
+        <div class="voiture">
+          <h2>Mercedes</h2>
+          <img src="mercedes.jpg" alt="voiture 1">
+          <p> <i>Clsse E 2023 </i></p>
+          <p><strong>Prix de location : 160 Dhs /jour</strong></p>
+          <button class="btn btn-orange">Permis de conduire valide requis pour la location</button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="voiture">
+          <h2>BMW</h2>
+          <img src="cabriolet.jpeg" alt="voiture 2">
+          <p> <i>Série 2 cabriolet </i></p>
+          <p><strong>Prix de location :200 Dhs /jour </strong></p>
+          <button class="btn btn-orange">Permis de conduire valide requis pour la location</button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="voiture">
+          <h2>Mercedes</h2>
+          <img src="Image3-1024x548.jpg" alt="voiture 3">
+          <p> <i>model de classe</i></p>
+          <p><strong>Prix de location : 250 Dhs/jour</strong></p>
+          <button class="btn btn-orange">Permis de conduire valide requis pour la location</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="voiture">
+          <h2>Citroen</h2>
+          <img src="citroen_C3.jpeg" alt="voiture 4">
+          <p> <i>3ème génération citadine polyvalente  <br> compacte & confortable </i></p>
+          <p><strong>Prix de location : 200 Dhs /jour</strong></p>
+          <button class="btn btn-orange">Permis de conduire valide requis pour la location</button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="voiture">
+          <h2>Citroen </h2>
+          <img src="citroen c5.jpeg" alt="voiture 5">
+          <p>C5</p>
+          <p><strong>Prix de location : 200 Dhs /jour</strong></p>
+          <button class="btn btn-orange">Permis de conduire valide requis pour la location</button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="voiture">
+          <h2>Renault</h2>
+          <img src="v_bg.jpeg" alt="voiture 6">
+          <p> <i> Performante et conduite confortable </i></p>
+          <p><strong>Prix de location: 200 Dhs/ jour</strong></p>
+          <button class="btn btn-orange">Permis de conduire valide requis pour la location</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="voiture">
+          <h2>Chevrolet</h2>
+          <img src="chevrolet_berline.jpeg" alt="voiture 7">
+          <p><i> Berline diesel </i></p>
+          <p><strong>Prix de location : 160 Dhs /jour</strong></p>
+          <button class="btn btn-orange">Permis de conduire valide requis pour la location</button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="voiture">
+          <h2>BMW</h2>
+          <img src="images.jpeg" alt="voiture 8">
+          <p>  <i>m4</i></p>
+          <p><strong>Prix de location : 160 Dhs/ jour</strong></p>
+          <button class="btn btn-orange">Permis de conduire valide requis pour la location</button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="voiture">
+          <h2>Renault</h2>
+          <img src="Kangoo.png" alt="voiture9">
+          <p> <i>Kangoo  </i></p>
+          <p><strong>Prix de location : 250 Dhs /jour</strong></p>
+          <button class="btn btn-orange">Permis de conduire valide requis pour la location</button>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="voiture">
+          <h2>Tesla</h2>
+          <img src="tesla_model_3.jpeg" alt="voiture 10">
+          <p>  <i> Tesla model 3 offre une grande autonomie &  <br> d'excellentes performances électriques  </i></p>
+          <p><strong>Prix de location : 400 Dhs/ jour</strong></p>
+          <button class="btn btn-orange">Permis de conduire valide requis pour la location</button>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="voiture">
+          <h2>Ford</h2>
+          <img src="ford_focus.jpeg" alt="voiture 11">
+          <p> <i> Ford focus compacte polyvalente, <br> offrant un bon équilibre entre performance,<br>confort et technologie </i> </p>
+          <p><strong>Prix de location : 300 Dhs/ jour</strong></p>
+          <button class="btn btn-orange">Permis de conduire valide requis pour la location</button>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="voiture">
+          <h2>Peugeot</h2>
+          <img src="peugeot_2008.jpeg" alt="voiture 12">
+          <p> <i> 2008, offrant une meilleure autonomie <br>et une consommation de carburant réduite </i> </p>
+          <p><strong>Prix de location : 300 Dhs/ jour</strong></p>
+          <button class="btn btn-orange">Permis de conduire valide requis pour la location  </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="first">          
+        <img src="logo.png" alt="logo_car" class="logocar">
+        <p class="drive">Autocars is a nationwide car rental service that provides cars and 
+        vehicles of any size and make at an affordable and reasonable
+         price.</p>
+    </div>
+    <div class="second">
+        <p> About us</p>
+            Services<br>
+            Testimonials<br>
+            Prices<br>
+            FAQs<br>
+            Location
+    </div>
+    <div class="third">
+        <p>Find us</p>
+        <p>27 Rainbow Rd<br>
+            Los Angeles, CA
+            California 90017</p><br>
+            <p><a href="https://www.instagram.com/"class="pimg1"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                <a href="https://www.twitter.com" class="pimg2"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                <a href="https://www.facebook.com" class="pimg3"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                <a href="https://www.youtube.com" class="pimg4"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></p>
+    </div>
+    <div class="fourth"> 
+        <p>Contacts</p>
+        <p>General:<br><br>
+            +1 (480) 555-0103<br><br>
+            info@demolink.org<br><br>
+            Other inquiries:<br><br>
+            +1 (800) 475-9123<br><br>
+            mail@demolink.org</p>
+    </div>
+   
+</footer> <div class="fifth">
+    <p>© 2024 GoDrive. All rights reserved. Privacy Policy</p>
+</div>
+
+  
+<style>
+  footer{
+  border-bottom-color: white;
+  background-color: rgb(0, 5, 24);
+  color:white;
+  display:flex;
+  padding-top:50px;
+  font-size:15px;
+  align-content: center;
+  margin-top: 80px;
+}
+footer div{
+  padding:20px;
+}.drive{
+  padding:20px;
+  margin-right:60%;
+}.logocar{
+  padding-left:20px;
+}.second{
+  margin-left:0;
+}.fifth{
+  background-color:rgb(0, 5, 24);
+  color:rgb(155, 154, 154);
+  float:left;
+  width: 100%;
+  padding-top:20px;
+  padding-bottom:15px;
+  font-size:15px;
+}
+
+   
+
+</style>
+ 
+</body>
+</html>

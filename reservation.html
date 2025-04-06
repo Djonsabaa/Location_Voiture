@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+    <link rel="stylesheet"  href="formulaire.css">
+</head>
+<body >
+
+<form id="inscription" action="reservation.php" method="post">   
+     <fieldset>
+    <legend> Send us a message</legend>
+
+<div class="form">
+    <div  class="form1">
+        <input type = "text" name="nom" placeholder="Nom" id="nom" ><br><br>
+        <input type = "text" name="prenom" placeholder="Prenom" id="prenom" ><br><br>
+        <input type = "email" name="adresse" placeholder="email" id="email" ><br><br>
+        <input type = "email" name="adresse_email" placeholder="confirmation" id="email2" ><br><br>
+    </div>
+    <div class="form2">
+        <input type = "password" name="mdp" placeholder="Votre mot de passe" id="mdp" ><br><br>
+        <input type = "number" name="phone" placeholder="Phone number"id="phone" ><br><br>
+        <input type = "text" name="marque" placeholder="Marque" id="marque" ><br><br>
+        <input type = "date" name="date" placeholder="date" id="date" ><br><br>
+    </div>
+</div>
+
+    <textarea name="message" placeholder="ecrivez un message (Facultatif)" cols="70" rows="10"></textarea><br><br><br>
+
+<span id="erreur" style="color : red" style="font-size : 5px"></span><br>
+<button type="submit" value="inscription">  Envoyer</button>
+
+
+</fieldset></form>
+
+
+<script>
+    
+    document.getElementById("email2").addEventListener("input",function(){
+        if(this.value != document.getElementById("email").value){
+            document.getElementById("erreur").innerHTML = "Les deux emails ne correspondent pas";
+        }else{
+            document.getElementById("erreur").innerHTML = "";
+        }
+
+
+    })
+
+    document.getElementById("inscription").addEventListener("submit",function(e){
+
+        var erreur;
+        var nom = document.getElementById("nom");
+        var prenom = document.getElementById("prenom");
+        var inputs = document.getElementsByTagName("input");
+        var nomRegex = /^[a-zA-Z\s]+$/;
+
+
+
+            for( var i = 0; i < inputs.length; i++){
+                if(!inputs[i].value){
+                    erreur = "Veuillez renseigner tous les champs";
+                }
+            }
+
+        if(erreur){
+        e.preventDefault();
+        document.getElementById("erreur").innerHTML = erreur ;
+        return false;
+        }else{
+            alert('Votre formulaire envoyé');
+        }
+
+        if (!nomRegex.test(nom.value)) {
+            document.getElementById("erreur").innerHTML = "Le nom doit comporter des lettres et des tirets uniquement";
+            e.preventDefault();
+            return ;
+        }
+        if (!nomRegex.test(prenom.value)) {
+            document.getElementById("erreur").innerHTML = "Le prénom doit comporter des lettres et des tirets uniquement";
+            e.preventDefault();
+            return ;
+        }if (!nomRegex.test(marque.value)) {
+            document.getElementById("erreur").innerHTML = "La marque doit comporter des lettres et des tirets uniquement";
+            e.preventDefault();
+            return ;
+        }
+    
+        // var email = document.getElementById("email");
+        // var email2 = document.getElementById("email2");
+        // var password = document.getElementById("mdp");
+        // var marque = document.getElementById("marque");
+        // var phone = document.getElementById("phone");
+        // var date = document.getElementById("date");
+
+
+        
+        // if(!date.value){
+        //     erreur = "Veuillez renseigner la date de reservation";
+        // }
+        // if(!marque.value){
+        //     erreur = "Veuillez choisir la marque de voiture ";
+        // }
+        // if(!phone.value){
+        //     erreur = "Veuillez renseigner votre numero de telephone";
+        // }
+        
+        // if(!password.value){
+        //     erreur = "Veuillez renseigner votre mot de passe";
+        // }
+        // if(!email2.value){
+        //     erreur = "Veuillez remplir l'email";
+        // }    
+        // if(!email.value){
+        //     erreur = "Veuillez remplir l'email";
+        // }
+        
+        // if(!prenom.value){
+        //     erreur = "Veuillez remplirle prénom";
+        // }
+
+
+
+        // if(!nom.value){
+
+        //     erreur = "Veuillez remplir le nom";
+        // }
+    
+    })
+</script>
+<style>
+
+    fieldset{
+        
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow:5px 5px 5px rgb(104, 103, 103);
+    width:50%;
+    position:relative;
+    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif ; font-size: 1.3em; font-style : normal ;
+}fieldset legend{
+    font-weight:900;
+    font-size: 1.7em;
+}
+fieldset input{
+   
+    border:1px solid black;
+    box-shadow:5px 5px 5px rgb(104, 103, 103);
+    font-size:15px;
+    border-radius:5px;
+    padding : 10px;
+    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif ; font-size: 1.3em; font-style : normal ;
+    font-size: 0.8em;
+    color: rgb(187, 185, 185);
+}
+.form{
+    display:flex;
+   
+    
+}.form1 {
+    display:block;
+    margin:20px;
+    
+}.form2 {
+    display:block;
+    margin:20px;
+    
+}fieldset input::placeholder{
+    color: rgb(187, 185, 185);
+}fieldset textarea{
+    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif ; font-size: 1.3em; font-style : normal ;
+    font-size:0.8em;
+    margin:20px;
+    border-radius:5px;
+    border:1px solid black;
+    box-shadow:5px 5px 5px rgb(104, 103, 103);
+}fieldset button{
+    margin-left:20px;
+    color:white;
+    background-color:black;
+    padding:15px;
+    border-radius:5px;
+    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif ; font-size: 1.3em; font-style : normal ;
+    font-size: 0.8em;
+}fieldset button:hover{
+    background-color: rgb(122, 120, 120);
+    
+}
+</style>
+</body>
+</html>
