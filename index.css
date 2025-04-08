@@ -59,40 +59,10 @@ ul{
     position: relative;
     right:25%;
     bottom:30%;
-}.v1 {
-        position: absolute;
-        bottom: 70%; /* ajustez la position verticale selon vos préférences */
-        left: 500px; /* ajustez la position horizontale selon vos préférences */
-         /* espace autour du texte */
-      }
-.img a{
-    margin :20px;
-    height:100px;
-    font-size:20px;
-    font-size:20px;
-}.img1:hover{
-    border-radius:0px;
-    font-size:25px;
-    border:0px ;
-    transform-style:preserve-3d;
-    transition: all ease 0.2s;
-    border-bottom:3px solid #DD2A7B;
-}.img2:hover{
-    
-    
+}
 
-    border:0px ;transition: all ease 0.2s;
-    font-size:25px;border-bottom:3px solid #1DA1F2;
-}.img3:hover{
-    border:0px ;transition: all ease 0.2s;
-    font-size:25px;
-    border-bottom:3px solid #3b5998;
-}.img4:hover{
 
-    font-size:25px;
-    border:0px ;transition: all ease 0.2s;
-    border-bottom:3px solid #FF0000;
-}.pimg1:hover{
+.pimg1:hover{
     background:linear-gradient(235deg, #515BD4,#8134AF ,#DD2A7B,#FEDA77,#F58529);
     border:0px ;transition: all ease 10s;
     transform-style: preserve-3d;
@@ -114,13 +84,8 @@ ul{
      margin-right:10px;
      
  }
-.img1,.img2,.img3,.img4{
-   height:auto;
 
-    padding: 5px;
-    margin-right:10px;
-    
-}.v2{
+.v2{
     margin-left:0;
     position:absolute;
     top:35%;
@@ -131,9 +96,9 @@ ul{
     text-align: center;
     color:color;
     font-weight:900;
-    font-size:3em;
+    font-size:2em;
     margin:0px;
-    font-size:60px;
+    font-size:50px;
 
 }.v2 p{
     color:black;
@@ -142,7 +107,7 @@ ul{
     margin-left:180px;
     padding-right:60px;
     padding-top:20px;
-    font-weight:800;
+    font-weight:700;
 }.Discov{   
     color:white;
     background-color:#fd7e14;
@@ -307,24 +272,64 @@ svg{
     padding-top:25px;
     font-weight:400;font-size:0.8em;
     
-}footer{
+}
+footer{
     border-bottom-color: white;
     background-color: rgb(2, 14, 70);
     color:white;
-    display:flex;
-    padding-top:50px;
+    padding-top:40px;
+    padding-bottom: 30px;
     font-size:15px;
     align-content: center;
-}footer div{
+    
+}
+footer  .foot{
     padding:20px;
-}.drive{
-    padding:20px;
-    margin-right:60%;
-}.logocar{
-    padding-left:20px;
-}.second{
-    margin-left:0;
-}.confiance{
+    margin-right:20px;
+    display: flex;
+    justify-content: center;
+}
+.colonne{
+    padding: 20px;
+    font-size: 15px;
+    
+}
+.img a{
+    height:100px;
+    font-size:20px;
+}
+.img1:hover{
+    border-radius:0px;
+    font-size:25px;
+    border:0px ;
+    transform-style:preserve-3d;
+    transition: all ease 0.2s;
+    border-bottom:3px solid #DD2A7B;
+}
+.img2:hover{
+    border:0px ;transition: all ease 0.2s;
+    font-size:25px;border-bottom:3px solid #1DA1F2;
+}
+.img3:hover{
+    border:0px ;transition: all ease 0.2s;
+    font-size:25px;
+    border-bottom:3px solid #3b5998;
+}
+.img4:hover{
+
+    font-size:25px;
+    border:0px ;transition: all ease 0.2s;
+    border-bottom:3px solid #FF0000;
+}
+.img1,.img2,.img3,.img4{
+    height:auto;
+ 
+     padding: 5px;
+     margin-right:10px;
+     
+ }
+
+.confiance{
     display:flex;
     padding:60px;
     background-color:rgb(243, 242, 242);
@@ -351,45 +356,55 @@ svg{
     margin-top:50px;
     padding-top:15px;
     padding-bottom: 15px;;
-}.more:hover{
+}
+.more:hover{
     background-color: white;
     color:#fd7e14;
     transition: all ease 0.5s;
     box-shadow:5px 5px 5px rgb(104, 103, 103)
-}.noir{
+}
+.noir{
     background:rgb(0, 10, 56);
     color:white;
     display:flex;
     padding:60px;
     margin-top:300px;
     margin-bottom:60px;
-}.noir div{
+}
+.noir div{
     padding:30px;
+
 }.p3{
     font-size: 0.7em;
     color:white;
     text-align:center;
     padding-top:25px;
-}.p1{
+}
+.p1{
     font-size:2em;
     text-align: center;
-}.p2{
+}
+.p2{
     text-align: center;
-}.profil{
+}
+.profil{
     display:inline-flex;
     margin:150px;
-}.profil div:hover{
+}
+.profil div:hover{
     box-shadow:5px 5px 10px #50504f;
     transition: all ease 0.5s;
     
-}.profil div {
+}
+.profil div {
     font-size:0.7em;
     text-align:center;
     border:1px solid rgb(206, 201, 201);
     border-radius:10px;
     padding:10px;
     margin: 15px;
-}.profil img{
+}
+.profil img{
     align-content: center;
     border: 5px solid;
     border-top-color:#fd7e14;
@@ -397,19 +412,24 @@ svg{
     border-bottom-color:rgb(14, 29, 94);
     border-left-color:rgb(14, 29, 94);
     border-radius:50%;
-}.propri{
+}
+.propri{
     color:rgb(0, 20, 109);
     font-size:15px;
     font-weight:bolder;
-}.jerome {
+}
+.jerome {
     margin-left:0;
-}.zara{
+}
+.zara{
     border-radius:50%;
-}.custom{
+}
+.custom{
     margin:100px;
     margin-bottom:10px;
     text-align:center;
-}.custom p{
+}
+.custom p{
     font-size:2em;
     padding-bottom:0px;
     font-weight: 500;
