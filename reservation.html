@@ -4,37 +4,476 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulaire</title>
-    <link rel="stylesheet"  href="formulaire.css">
+    <link rel="stylesheet"  href="">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+      *{
+    margin:0px;
+    padding:0px;
+    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif ; font-size: 1.3em; font-style : normal ;
+    font-size:1.1em;
+    line-height: 1.2;
+}
+body{
+        margin:0;
+    }
+.head{
+    background-image: url("img/noiree.jpg");
+    background-size:cover;
+    height: 90px;
+    
+}
+ul li a.it{
+    background-color:#fd7e14;
+    color: white;
+
+} 
+    .body1{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        min-height:100vh;
+        background-image:url("img/img.jpg");
+        background-size:cover;
+        background-position:center;
+        background-attachment: fixed;
+        }
+        .form3{
+        margin-top:20%;
+        margin-bottom:25%;
+        box-sizing:border-box;
+        width: 500px;
+        background:transparent;
+        border:2px solid rgba(255, 255, 255, .2);
+        backdrop-filter:blur(20px);
+        box-shadow:0px 0px 10px rgba(0, 0, 0, .2);
+        padding:35px;
+        border-radius:10px;
+    } 
+        .form3 h1{
+        color:#fddbbf;
+        font-size:36px;
+        text-align:center;
+        }
+.double_champ{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+}
+.champ{
+    position: relative;
+}
+.champ input{
+    padding: 20px;
+    padding-left: 20px;
+    width: 200px;
+}
+.champ i{
+color: white;
+font-size: 20px;
+position: absolute;
+top: 100px;
+margin-top: 10px;
+margin-right: 10px;
+/*left: 10px;*/
+transform: translateY(-50);
+}
+.champ input::placeholder{
+        color:rgb(241, 239, 239);
+    }
+ .form3 .champ{
+        width:90%;
+        height:50px;
+        margin:30px 0;
+    }.champ input{
+        width: 100%;
+        height: 50%;
+        background : transparent;
+        border :none;
+        outline:none;
+        border:2px solid rgba(255, 255, 255, .2);
+        border-radius: 10px;
+        font-size:16px;
+        color:white;
+        padding:10px;
+    }
+    .champ textarea{
+        width: 100%;
+        height: 50%;
+        background : transparent;
+        border :none;
+        outline:none;
+        border:2px solid rgba(255, 255, 255, .2);
+        border-radius: 10px;
+        font-size:16px;
+        color:white;
+        padding-bottom:30%;
+    }
+        .champ textarea::placeholder{
+        color:rgb(241, 239, 239);
+    }
+   
+       .form3 button{  
+        margin-top:40px;
+        height:45px;
+        background-color:#fd7e14;
+        border:none;
+        outline:none;
+        border-radius:10px;
+        margin-left:40%;
+        padding:15px;
+        font-weight:600;
+        font-size: 17px;
+        color:rgb(255, 255, 255);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }.form3 button:hover{
+        background-color:purple;
+        color:white;
+        transition:all ease 0.5s; 
+    }
+      
+    
+    
+    
+
+
+     .marques-dropdown {
+         font-size: 15px;
+         display: none; 
+        position: absolute;
+         background-color: #f9f9f9;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+         z-index: 1;
+     }
+     .marques-dropdown a {
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+     }
+     
+     .marques-dropdown a:hover {
+         text-align: center;
+         background-color: #f1f1f1;
+     }
+     li:hover .marques-dropdown {
+         display: block;
+     }
+</style>
 </head>
-<body >
+<body>
+    <div class="head">
+        <div class="main">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="Accueil.html" target="_blank"><i class="fa-solid fa-house" style="color: #e7e5e5;"></i> Accueil </a></li>
 
-<form id="inscription" action="reservation.php" method="post">   
-     <fieldset>
-    <legend> Send us a message</legend>
+                <li><a href="#">Marque</a>
+                    <div class="marques-dropdown">
+                        <a href="GALERIE(2).html">BMW </a>
+                        <a href="GALERIE (2).html">Chevrolet </a>
+                        <a href="GALERIE (2).html">Tesla </a>
+                        <a href="galerie.html">Peugeot</a>
+                        <a href="GALERIE (2).html">kangoo </a>
+                        <a href="galerie.html">Renault </a>
+                        <a href="GALERIE (2).html">Ford </a>
+                        <a href="galerie.html">Mercedes</a>
+                        <a href="galerie.html">Range-Rover</a>
+                        <a href="galerie.html">Toyota</a>
+                        
+                    </div>
+                </li>
 
-<div class="form">
-    <div  class="form1">
-        <input type = "text" name="nom" placeholder="Nom" id="nom" ><br><br>
-        <input type = "text" name="prenom" placeholder="Prenom" id="prenom" ><br><br>
-        <input type = "email" name="adresse" placeholder="email" id="email" ><br><br>
-        <input type = "email" name="adresse_email" placeholder="confirmation" id="email2" ><br><br>
+
+                <li><a href="galerie.html" target="_blank">Galerie</a></li>
+                <li><a href="reservation.html" target="_blank">Reservation</a></li>
+                <li><a href="#" target="_blank" class="it">Contactez-nous</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="form2">
-        <input type = "password" name="mdp" placeholder="Votre mot de passe" id="mdp" ><br><br>
-        <input type = "number" name="phone" placeholder="Phone number"id="phone" ><br><br>
-        <input type = "text" name="marque" placeholder="Marque" id="marque" ><br><br>
-        <input type = "date" name="date" placeholder="date" id="date" ><br><br>
+    <div class="visuel">
+            <img src="img/blanche.jpg" alt="mrco">
+            <div class="v1">
+                <p class="img">
+                    <a href="https://www.instagram.com/"class="img1" target="_blank"target="_blank"><i class="fa-brands fa-instagram" style="color:#DD2A7B;" ></i></a>
+                    <a href="https://www.twitter.com" class="img2" target="_blank"><i class="fa-brands fa-twitter" style="color: #1DA1F2;"></i></a>
+                    <a href="https://www.facebook.com" class="img3"target="_blank"><i class="fa-brands fa-facebook-f" style="color: #3b5998;"></i></a>
+                    <a href="https://www.youtube.com" class="img4"target="_blank"><i class="fa-brands fa-youtube" style="color: #FF0000;"></i></a>
+                </p>
+            </div>
+        </div>
+        <div class="v2">
+            <p class="c"> ☼ Reservation <br></p> 
+                <p >
+                    "Explorez.<br> Roulez.<br> Vivez. Notre agence, votre liberté!"</p><br>
+                    <div class="span"><a href="" alt="discov" class="Discov"> Discover me</a><a href="" alt="contact" class="contacter"> Contact Us</a></div>
+         </div>
+    <div class="body1">
+        <div class="form3">
+        <form id="inscription" action="reservation.php" method="post">   
+           <h1> Contactez-nous</h1>
+
+       <div class="double_champ">
+            <div class="champ">
+               <input type = "text" name="nom" placeholder="Nom" id="nom"> <i class='bx bxs-user'> </i> 
+                </div> 
+                <div class="champ">  <input type = "text" name="prenom" placeholder="Prenom" id="prenom"> </div> 
+            </div>
+
+             
+            <div class="double_champ">
+                <div class="champ"> <input type = "email" name="adresse" placeholder="email" id="email" > </div>
+                <div class="champ"> <input type = "email" name="adresse_email" placeholder="confirmation" id="email2"> </div>
+            </div>
+       
+            <div class="double_champ">
+                <div class="champ"><input type = "password" name="mdp" placeholder="Votre mot de passe" id="mdp" ><i class='bx bxs-lock-alt'></i> </div>
+                <div class="champ"> <input type = "number" name="phone" placeholder="Phone number"id="phone"> </div>
+            </div>
+
+            <div class="double_champ"> 
+              <div class="champ"> <input type = "text" name="marque" placeholder="Marque" id="marque"> </div>
+               <div class="champ"><input type = "date" name="date" placeholder="date" id="date"> </div>
+            </div> 
+
+            <div class="champ"> <textarea name="message" placeholder="ecrivez un message" cols="70" rows="10"></textarea><br><br><br></div>
+       <span id="erreur" style="color : red" style="font-size : 1em" style="font-family:Arial, Helvetica, sans-serif"></span><br>
+       <button type="submit" value="inscription">  Envoyer</button>
+       </form>
     </div>
+</div>  
+<footer>
+    <div class="first">          
+        <img src="img/logo.png" alt="logo_car" class="logocar">
+        <p class="drive">Autocars is a nationwide car rental service that provides cars and 
+        vehicles of any size and make at an affordable and reasonable
+         price.</p>
+    </div>
+    <div class="second">
+        <p> About us</p>
+            Services<br>
+            Testimonials<br>
+            Prices<br>
+            FAQs<br>
+            Location
+    </div>
+    <div class="third">
+        <p>Find us</p>
+        <p>27 Rainbow Rd<br>
+            Los Angeles, CA
+            California 90017</p><br>
+            <p><a href="https://www.instagram.com/"class="pimg1"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                <a href="https://www.twitter.com" class="pimg2"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                <a href="https://www.facebook.com" class="pimg3"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                <a href="https://www.youtube.com" class="pimg4"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></p>
+    </div>
+    <div class="fourth"> 
+        <p>Contacts</p>
+        <p>General:<br><br>
+            +1 (480) 555-0103<br><br>
+            info@demolink.org<br><br>
+            Other inquiries:<br><br>
+            +1 (800) 475-9123<br><br>
+            mail@demolink.org</p>
+    </div>
+   
+</footer> <div class="fifth">
+    <p>© 2024 GoDrive. All rights reserved. Privacy Policy</p>
 </div>
 
-    <textarea name="message" placeholder="ecrivez un message (Facultatif)" cols="70" rows="10"></textarea><br><br><br>
+  
+<style>
+    footer{
+    border-bottom-color: white;
+    background-color: rgb(0, 5, 24);
+    color:white;
+    display:flex;
+    padding-top:50px;
+    font-size:15px;
+    align-content: center;
+}footer div{
+    padding:20px;
+}.drive{
+    padding:20px;
+    margin-right:60%;
+}.logocar{
+    padding-left:20px;
+}.second{
+    margin-left:0;
+}.fifth{
+    background-color:rgb(0, 5, 24);
+    color:rgb(155, 154, 154);
+    float:left;
+    width: 100%;
+    padding-top:20px;
+    padding-bottom:15px;
+    font-size:15px;
+}
+  
+   
+ul{
+    float:right;
+    list-style-type: none;
+    margin-top:30px;
+    padding-right:5px;
+    font-size:17px;
+}ul li{
+    display :inline-block;
+    
+}ul li a{
+    text-decoration:none;
+    color:white;
+    padding:15px;
+    border: 1px solid transparent;
+    transition : 0.5 ease;
+    border-radius:5px;
+}ul li a:hover{
+    background-color:white;
+    color:#fd7e14;
+    transition: all ease 0.5s;
+}.logo img{
+    float:left;
+    height: auto;
+    margin:20px;
+}.main{
+    
+    max-width: 1200px;
+    
+}.main ul li i{
+    padding-right:3px;
+    
+}.visuel{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    display : inline-block;
+}.visuel img{
+    position:fixed;
+    position: relative;
+    right:25%;
+    bottom:30%;
+}.v1 {
+        position: absolute;
+        bottom: 70%; 
+        left: 500px; 
+      }
+.img a{
+    margin :20px;
+    height:100px;
+    font-size:20px;
+    font-size:20px;
+}.img1:hover{
+    border-radius:0px;
+    font-size:25px;
+    border:0px ;
+    transform-style:preserve-3d;
+    transition: all ease 0.2s;
+    border-bottom:3px solid #DD2A7B;
+}.img2:hover{
+    
+    
 
-<span id="erreur" style="color : red" style="font-size : 5px"></span><br>
-<button type="submit" value="inscription">  Envoyer</button>
+    border:0px ;transition: all ease 0.2s;
+    font-size:25px;border-bottom:3px solid #1DA1F2;
+}.img3:hover{
+    border:0px ;transition: all ease 0.2s;
+    font-size:25px;
+    border-bottom:3px solid #3b5998;
+}.img4:hover{
 
+    font-size:25px;
+    border:0px ;transition: all ease 0.2s;
+    border-bottom:3px solid #FF0000;
+}.pimg1:hover{
+    background:linear-gradient(235deg, #515BD4,#8134AF ,#DD2A7B,#FEDA77,#F58529);
+    border:0px ;transition: all ease 10s;
+    transform-style: preserve-3d;
+}.pimg2:hover{
+    
+    border:0px ;transition: all ease 0.5s;
+    background-color:#1DA1F2;
+}.pimg3:hover{
+    background-color:#3b5998;
+    border:0px ;transition: all ease 0.5s;
+    
+}.pimg4:hover{
+    background-color:#FF0000;
+    border:0px ;transition: all ease 0.5s;
+}.pimg1,.pimg2,.pimg3,.pimg4{
+    height:auto;
+     border-radius:5px 5px 5px 5px;
+     padding: 5px;
+     margin-right:10px;
+     
+ }
+.img1,.img2,.img3,.img4{
+   height:auto;
 
-</fieldset></form>
+    padding: 5px;
+    margin-right:10px;
+    
+}.v2{
+    margin-left:0;
+    position:absolute;
+    top:35%;
+    right: 800px;
 
+}.v2 .c{
+    align-content:center;
+    text-align: center;
+    color:color;
+    font-weight:900;
+    font-size:3em;
+    margin:0px;
+    font-size:60px;
+
+}.v2 p{
+    color:black;
+    align-content:baseline;
+    text-align:left;
+    margin-left:180px;
+    padding-right:60px;
+    padding-top:20px;
+    font-weight:800;
+}.Discov{   
+    color:white;
+    background-color:#fd7e14;
+    border-radius: 5px;
+    margin-right:20px;
+    padding:20px;
+    font-size:15px;
+    font-weight:700;
+    text-decoration: none;
+}.contacter{
+    border:1px solid rgb(104, 103, 103);
+    color:#fd7e14;
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+    padding:20px;
+    font-size:15px;
+    font-weight:700;
+    text-decoration:none;
+}.Discov:hover{
+    box-shadow:5px 5px 5px rgb(104, 103, 103);transition: all ease 0.5s;;
+}.contacter:hover{
+    box-shadow:5px 5px 5px rgb(104, 103, 103);transition: all ease 0.5s;
+
+}.span{
+    align-content:center;
+    text-align:center;
+    padding: 30px;
+    font-weight:200px;
+    font-size:0.9em;
+}
+
+    
+   
+       
+</style>
 
 <script>
     
@@ -129,64 +568,5 @@
     
     })
 </script>
-<style>
-
-    fieldset{
-        
-    border: 1px solid black;
-    border-radius: 15px;
-    box-shadow:5px 5px 5px rgb(104, 103, 103);
-    width:50%;
-    position:relative;
-    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif ; font-size: 1.3em; font-style : normal ;
-}fieldset legend{
-    font-weight:900;
-    font-size: 1.7em;
-}
-fieldset input{
-   
-    border:1px solid black;
-    box-shadow:5px 5px 5px rgb(104, 103, 103);
-    font-size:15px;
-    border-radius:5px;
-    padding : 10px;
-    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif ; font-size: 1.3em; font-style : normal ;
-    font-size: 0.8em;
-    color: rgb(187, 185, 185);
-}
-.form{
-    display:flex;
-   
-    
-}.form1 {
-    display:block;
-    margin:20px;
-    
-}.form2 {
-    display:block;
-    margin:20px;
-    
-}fieldset input::placeholder{
-    color: rgb(187, 185, 185);
-}fieldset textarea{
-    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif ; font-size: 1.3em; font-style : normal ;
-    font-size:0.8em;
-    margin:20px;
-    border-radius:5px;
-    border:1px solid black;
-    box-shadow:5px 5px 5px rgb(104, 103, 103);
-}fieldset button{
-    margin-left:20px;
-    color:white;
-    background-color:black;
-    padding:15px;
-    border-radius:5px;
-    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif ; font-size: 1.3em; font-style : normal ;
-    font-size: 0.8em;
-}fieldset button:hover{
-    background-color: rgb(122, 120, 120);
-    
-}
-</style>
 </body>
 </html>
